@@ -73,24 +73,6 @@ nav button {
   cursor: pointer;
 }
 
-.btn-red {
-  background-color: red;
-  color: white;
-  padding: 3px 24px;
-  font-size: 17px;
-  border-radius: 4px;
-  font-weight: 400;
-  height: 54px;
-}
-
-.btn-red-sm {
- background-color: red;
-    color: #fff;
-    font-size: 15px;
-    height: 39px;
-    width: 101px;
-}
-
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -98,20 +80,6 @@ nav button {
   gap: 16px;
   z-index: 10000;
 }
-
-.hero-buttons input {
-  padding: 7px 101px 8px 14px;
-  color: white;
-  font-size: 20px;
-  font-weight: bolder;
-  border-radius: 4px;
-  z-index: 100000;
-  background-color: rgba(23, 23, 23, 0.7);
-  border: 1px solid rgba(246, 238, 238, 0.5);
-  height: 39px;
-  width: 300px;
-}
-
 .first {
   display: flex;
   max-width: 80vw;
