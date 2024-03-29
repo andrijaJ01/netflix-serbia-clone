@@ -20,6 +20,7 @@ const CardRight = () => {
                 </Card.Body>
             </Card>
         </Col>
+        
     </Row>
     );
 }
