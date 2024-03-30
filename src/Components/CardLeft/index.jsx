@@ -8,7 +8,7 @@ const CardRight = () => {
         
         <Col md={6} className='p-0 mx-0 bg-black '>
             <Card className="h-100 mx-0 p-0 bg-black custom-card text-light"> 
-                <Card.Body>
+                <Card.Body className='bg-black'>
                     <Card.Title>Download your shows to watch offline</Card.Title>
                     <Card.Text>
                         Save your favorites easily and always have something to watch.
@@ -16,7 +16,7 @@ const CardRight = () => {
                 </Card.Body>
             </Card>
         </Col>
-        <Col md={6} className="bg-dark text-light px-0">
+        <Col md={6} className="bg-black text-light px-0">
             <Image fluid src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="" />
         </Col>
     </Row>
