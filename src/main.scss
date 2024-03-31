@@ -12,7 +12,9 @@ $danger: red;
   margin: 0;
   font-family: $font-primary;
 }
-
+.brn-danger{
+  background-color: $danger;
+}
 body {
   background-color: $bg-color;
 }
@@ -286,3 +288,5 @@ footer .questions {
     font-size: 13px;
   }
 }
+
+@import url("./styles/button.scss")

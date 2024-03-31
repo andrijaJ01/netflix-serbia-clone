@@ -182,7 +182,6 @@ footer .questions {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
   line-height: 10px;
-  text-wrap: nowrap;
 }
 
 .footer-btn {

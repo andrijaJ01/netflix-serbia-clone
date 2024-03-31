@@ -4,7 +4,7 @@ import "./style.scss";
 
 const CardRight = () => {
     return (
-        <Card className="h-100 mx-0 p-0 bg-black custom-card text-light">
+        <Card className=" mx-0 p-0 bg-black custom-card text-light">
             <Row className="mx-0 bg-black px-0 align-items-center">
                 <Col md={6} className='p-0 mx-0 bg-black'>
                     <Card.Body className="py-5 px-3 text-center">

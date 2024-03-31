@@ -31,6 +31,6 @@ const Template = ({ buttonText, buttonTextVariant, placeholder }) => (
 export const Default = Template.bind({});
 Default.args = {
   buttonText: "Get started",
-  buttonTextVariant: "danger", // Default variant for the button
+  buttonTextVariant: "danger", 
   placeholder: "Email",
 };
