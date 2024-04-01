@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
 
+$font-primary: "Poppins", sans-serif;
+$bg-color: black;
+$text-color: white;
+$footer-bg: #2d2d2d;
+$footer-box-hover-bg: #414141;
+$danger: red;
+
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: $font-primary;
 }
-
+.brn-danger{
+  background-color: $danger;
+}
 body {
-  background-color: black;
+  background-color: $bg-color;
 }
 
 .main {
@@ -18,11 +27,10 @@ body {
   width: 100%;
   height: 110vh;
   object-fit: cover;
-
 }
 
 .hero > :nth-child(1) {
-  font-family: "Poppins", sans-serif;
+  font-family: $font-primary;
   font-weight: bolder;
   font-size: 50px;
   text-align: center;
@@ -34,7 +42,7 @@ body {
   opacity: 0.69;
   position: absolute;
   top: 0;
-  background-color: black;
+  background-color: $bg-color;
 }
 
 nav {
@@ -44,18 +52,19 @@ nav {
   display: flex;
   align-items: center;
   height: 100px;
+
+  img {
+    width: 20%;
+    position: relative;
+    z-index: 10;
+  }
+
+  button {
+    position: relative;
+    z-index: 10;
+  }
 }
 
-nav img {
-  width: 20%;
-  position: relative;
-  z-index: 10;
-}
-
-nav button {
-  position: relative;
-  z-index: 10;
-}
 .separation {
   height: 7px;
   background-color: rgb(46, 44, 44);
@@ -80,6 +89,7 @@ nav button {
   gap: 16px;
   z-index: 10000;
 }
+
 .first {
   display: flex;
   max-width: 80vw;
@@ -113,15 +123,15 @@ section.first > div {
   flex-direction: column;
   padding: 34px 0;
   position: relative;
-}
 
-section.first > div :nth-child(1) {
-  font-size: 48px;
-  font-weight: bolder;
-}
+  :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+  }
 
-section.first > div :nth-child(2) {
-  font-size: 24px;
+  :nth-child(2) {
+    font-size: 24px;
+  }
 }
 
 .faq h2 {
@@ -130,14 +140,14 @@ section.first > div :nth-child(2) {
 }
 
 .faq {
-  background: black;
-  color: white;
+  background: $bg-color;
+  color: $text-color;
   padding: 34px;
 }
 
 .faqbox:hover {
-  background-color: #414141;
-  color: white;
+  background-color: $footer-box-hover-bg;
+  color: $text-color;
 }
 
 .qna {
@@ -154,7 +164,7 @@ section.first > div :nth-child(2) {
   font-size: 24px;
   display: flex;
   justify-content: space-between;
-  background-color: #2d2d2d;
+  background-color: $footer-bg;
   padding: 26px;
   max-width: 70vw;
   margin: 10px auto;
@@ -166,7 +176,7 @@ section.first > div :nth-child(2) {
 }
 
 footer {
-  color: white;
+  color: $text-color;
   max-width: 90vw;
   margin-left: 100px;
   padding: 40px;
@@ -180,16 +190,16 @@ footer .questions {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: white;
+  color: $text-color;
   line-height: 10px;
 }
 
 .footer-btn {
   width: 110px;
   padding: 3px;
-  color: white;
+  color: $text-color;
   background-color: rgb(19, 17, 17);
-  border: 1px solid white;
+  border: 1px solid $text-color;
   border-radius: 5px;
   margin-top: 20px;
 }
@@ -277,88 +287,6 @@ footer .questions {
   .hero > :nth-child(3) {
     font-size: 13px;
   }
-
-  .hero-buttons input {
-    width: 190px;
-  }
-
-  nav img {
-    width: 38% !important;
-  }
-
-  .btn-red-sm {
-    height: 31px;
-    width: 76px;
-    font-size: 14px;
-  }
-
-  .btn-red {
-    width: 135px;
-    font-size: 13px;
-    height: 36px;
-  }
-
-  .hero-buttons input {
-    font-size: 16px;
-  }
-
-  .secImg img {
-    width: 279px;
-  }
-
-  .secImg video {
-    position: absolute;
-    left: 37px;
-    top: 77px;
-    right: 75px;
-    width: 207px;
-  }
-
-  section.first > div :nth-child(1) {
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  section.first > div :nth-child(2) {
-    font-size: 15px;
-  }
-
-  nav {
-    height: 55px;
-  }
 }
 
-@media screen and (max-width: 800px) {
-  nav img {
-    width: 30% !important;
-  }
-
-  .footer {
-    margin-right: 63px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 89px;
-  }
-
-  footer .questions {
-    margin-bottom: 28px;
-    margin-right: 95px;
-  }
-
-  .questions {
-    text-align: center;
-    margin: auto;
-  }
-}
-
-.footer a {
-  font-size: 14px;
-  color: white;
-}
-
-.footer-item {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  margin-right: 32px;
-}
+@import url("./styles/button.scss")

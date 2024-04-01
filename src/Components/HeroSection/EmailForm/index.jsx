@@ -2,6 +2,7 @@ import React from 'react';
 import {  Col, Button, InputGroup, FormControl } from 'react-bootstrap';
 
 
+
 const EmailForm = () => {
     return (
         <Col md={{ span: 6, offset: 3 }} className='my-3 '>
